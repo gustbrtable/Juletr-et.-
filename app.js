@@ -1,20 +1,21 @@
 console.log("Js called");
+
 var setup = function(){
     push();
     // base
     var width = 800;
-    var height = 1000;
-    var xMid = width / 2;
+    var height = 2000;
+    var xMid = width / 2 ;
     var yMid = height / 2;
     createCanvas(width, height);
     drawBackground();
     drawTree(xMid, yMid + 50);
     drawGodJul(xMid, yMid + 50);
-
+   
     // examples
     drawJulekugle(xMid - 150, yMid + 170);
     drawDannebrog(xMid + 100, yMid - 100);
-
+ 
     // call you own functions here
     drawTemplate(260, 780);
     pop();
@@ -25,9 +26,11 @@ var drawTree = function (centerX, centerY) {
 
     // stem
     fill(150, 100, 50);
-    rect(centerX - 25, centerY + 275, 50, 75);
-
-    // leaves
+    rect(centerX , centerY + 275, 75, 100);
+ //Julekugle
+ fill(300,1,1);
+ ellipse(centerX,centerY,500,350);
+ 
     var counter = 0;
     while (counter < 3){
         drawLevel(centerX, centerY, counter);
