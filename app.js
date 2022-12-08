@@ -89,7 +89,8 @@ var drawJulekugle = function(centerX, centerY) {
     pop();
 };
 
-/**
+
+/**<
  * Make a draw function here
  * It should be positioned to the parameters
  * Should contain at least one loop and one if statement
@@ -103,3 +104,6 @@ var drawTemplate = function(centerX, centerY) {
 };
 
 console.log("JS finished.")
+
+
+
